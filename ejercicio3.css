@@ -1,0 +1,26 @@
+body
+ { font-family: Arial, sans-serif; background: #F5F5F5; color: #1F1F1F; margin: 0; padding: 20px; }
+.comparar { display: flex; flex-wrap: wrap; gap: 20px; }
+.tarjeta { background: white; border-radius: 10px; padding: 16px; width: 320px; }
+.mal
+ { border-top: 8px solid #B3261E; }
+.bien
+ { border-top: 8px solid #2E7D32; }
+li
+ { font-size: 18px; margin: 10px 0; list-style: none; }
+ul
+ { padding: 0; }
+/* Un círculo de color */
+.punto
+ { display: inline-block; width: 18px; height: 18px; border-radius: 50%; vertical-align: middle; }
+.verde
+ { background: #2E7D32; }
+.rojo
+ { background: #B3261E; }
+/* Texto del estado, en negrita y del mismo color que el punto */
+.aprobado
+ { color: #2E7D32; font-weight: bold; }
+.desaprobado { color: #B3261E; font-weight: bold; }
+/* Simulación: así ve la página una persona que no distingue colores */
+.sin-color { filter: grayscale(1); }
+#btn-gris { font-size: 18px; padding: 10px 16px; margin-bottom: 16px; cursor: pointer; }

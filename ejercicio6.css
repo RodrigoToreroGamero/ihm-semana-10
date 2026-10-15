@@ -1,0 +1,20 @@
+body
+ { font-family: Arial, sans-serif; background: #F5F5F5; color: #1F1F1F; margin: 0; padding: 20px; }
+.comparar { display: flex; flex-wrap: wrap; gap: 20px; }
+.tarjeta { background: white; border-radius: 10px; padding: 16px; width: 320px; }
+.mal
+ { border-top: 8px solid #B3261E; }
+.bien
+ { border-top: 8px solid #2E7D32; }
+.contador { font-size: 20px; font-weight: bold; }
+/* Los dos "botones" se ven iguales */
+.falso-boton, button {
+display: inline-block; font-size: 18px; padding: 12px 20px;
+background: #0F4C81; color: #FFFFFF; border: 0; border-radius: 6px; cursor: pointer;
+}
+/*
+ Así NO: se borra el borde que indica dónde está el teclado */
+.mal *:focus { outline: none; }
+/*
+ Así SÍ: un borde naranja grueso muestra dónde está el teclado */
+.bien button:focus-visible { outline: 4px solid #F4B400; outline-offset: 3px; }

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejemplo 5 · Formularios claros</title>
+	<link rel="stylesheet" href="ejercicio5.css">
+</head>
+<body>
+	<h1>Ejemplo 5: formularios claros</h1>
+	<p>Pulsa «Enviar» en los dos formularios sin escribir nada.</p>
+	<div class="comparar">
+
+		<!-- ✕ Así NO: sin etiqueta (solo un texto gris que desaparece) y el error es solo un borde rojo -->
+		<div class="tarjeta mal">
+			<h2>✕ Así NO</h2>
+			<input id="correo-mal" placeholder="Correo">
+			<button id="enviar-mal">Enviar</button>
+		</div>
+		
+		<!-- ✓ Así SÍ: etiqueta visible, ayuda y mensaje de error en palabras -->
+		<div class="tarjeta bien">
+			<h2>✓ Así SÍ</h2>
+			<label for="correo-bien">Correo de la universidad</label>
+			<p class="ayuda" id="ayuda">Ejemplo: ana@universidad.edu.pe</p>
+			<input id="correo-bien" type="email" aria-describedby="ayuda error">
+			<p class="error" id="error"></p>
+			<button id="enviar-bien">Enviar</button>
+		</div>
+	</div>
+	
+	<!-- ======== JavaScript: el comportamiento ======== -->
+	<script src="ejercicio5.js"></script>
+</body>
+</html>

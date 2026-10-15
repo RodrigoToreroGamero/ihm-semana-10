@@ -1,0 +1,27 @@
+body
+ { font-family: Arial, sans-serif; background: #F5F5F5; color: #1F1F1F; margin: 0; padding: 20px; }
+.comparar { display: flex; flex-wrap: wrap; gap: 20px; }
+.tarjeta { background: white; border-radius: 10px; padding: 16px; width: 320px; }
+.mal
+ { border-top: 8px solid #B3261E; }
+.bien
+ { border-top: 8px solid #2E7D32; }
+.boton
+ { font-size: 18px; padding: 12px 20px; border: 0; border-radius: 6px; color: #FFFFFF; }
+.nota
+ { font-size: 14px; color: #595959; }
+/* ✕ Así NO: colores claros, poco contraste */
+.mal .ayuda
+ { color: #AAAAAA; }
+ /* gris claro sobre blanco: 2.3 a 1 */
+.mal .boton
+ { background: #81C784; }
+ /* verde claro con texto blanco: 2.0 a 1 */
+/* ✓ Así SÍ: colores oscuros, buen contraste */
+.bien .ayuda { color: #595959; }
+ /* gris oscuro sobre blanco: 7.0 a 1 */
+.bien .boton { background: #2E7D32; }
+ /* verde oscuro con texto blanco: 5.1 a 1 */
+/* Simula una pantalla vista bajo el sol: todo se ve más claro */
+.sol .tarjeta { filter: contrast(0.5) brightness(1.4); }
+#btn-sol { font-size: 18px; padding: 10px 16px; margin-bottom: 16px; cursor: pointer; }

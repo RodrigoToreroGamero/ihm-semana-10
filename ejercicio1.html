@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejemplo 1 · Imágenes con descripción</title>
+	<link rel="stylesheet" href="ejercicio1.css">
+</head>
+<body>
+	<h1>Ejemplo 1: imágenes con descripción</h1>
+	<p>Pulsa los botones «Escuchar»: la computadora leerá la tarjeta como lo hace un lector de pantalla.</p>
+	<div class="comparar">
+	<!-- ✕ Así NO: la imagen no tiene descripción (falta alt) -->
+		<div class="tarjeta mal">
+			<h2>✕ Así NO</h2>
+			<img id="foto-mal" src="lomo.jpg">
+			<p>Plato del día: S/ 14.00</p>
+			<button id="escuchar-mal">Escuchar</button>
+			<div class="lector" id="texto-mal"></div>	
+		</div>
+	
+	<!-- ✓ Así SÍ: alt describe lo que muestra la imagen -->
+		<div class="tarjeta bien">
+			<h2>✓ Así SÍ</h2>
+			<img id="foto-bien" src="lomo.jpg" alt="Lomo saltado con arroz y papas fritas">
+			<p>Plato del día: S/ 14.00</p>
+			<button id="escuchar-bien">Escuchar</button>
+			<div class="lector" id="texto-bien"></div>
+		</div>
+	</div>
+	
+	<!-- ======== JavaScript: el comportamiento ======== -->
+	<script src="ejercicio1.js"></script>
+</body>
+</html>

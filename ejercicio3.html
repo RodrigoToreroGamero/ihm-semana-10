@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejemplo 3 · No depender solo del color</title>
+	<link rel="stylesheet" href="ejercicio3.css">
+</head>
+<body>
+	<h1>Ejemplo 3: no depender solo del color</h1>
+	
+	<button id="btn-gris">Ver sin colores</button>
+	 
+	<div class="comparar" id="zona">
+	
+		<!--Así NO: solo un punto de color dice si aprobó -->
+		<div class="tarjeta mal">
+			<h2>
+			 Así NO</h2>
+			<ul>
+			<li><span class="punto verde"></span> Matemática</li>
+			<li><span class="punto rojo"></span> Física</li>
+			<li><span class="punto verde"></span> Historia</li>
+			</ul>
+		</div>
+		
+		<!--Así SÍ: punto + icono + palabra -->
+		<div class="tarjeta bien">
+			<h2> Así SÍ</h2>
+			<ul>
+				<li><span class="punto verde"></span> Matemática: <span class="aprobado">Aprobado</span></li>
+				<li><span class="punto rojo"></span> Física: <span class="desaprobado">Desaprobado</span></li>
+				<li><span class="punto verde"></span> Historia: <span class="aprobado">Aprobado</span></li>
+			</ul>
+		</div>
+	</div>
+	
+	<!-- ======== JavaScript: el comportamiento ======== -->
+	<script src="ejercicio3.js"></script>
+</body>
+</html>

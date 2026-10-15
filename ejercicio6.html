@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejemplo 6 · Usar la página con el teclado</title>
+	<link rel="stylesheet" href="ejercicio6.css">
+</head>
+<body>
+	<h1>Ejemplo 6: usar la página con el teclado</h1>
+	<p>Deja el ratón. Pulsa <b>Tab</b> para moverte y <b>Enter</b> para activar.</p>
+	<div class="comparar">
+		<!-- ✕ Así NO: un <div> pintado como botón. El teclado no llega hasta él. -->
+		<div class="tarjeta mal">
+			<h2>✕ Así NO</h2>
+			<div class="falso-boton" id="boton-mal">Sumar 1</div>
+			<p class="contador">Contador: <span id="cuenta-mal">0</span></p>
+		</div>
+		<!-- ✓ Así SÍ: un <button> de verdad. Funciona con ratón y con teclado. -->
+		<div class="tarjeta bien">
+			<h2>✓ Así SÍ</h2>
+			<button id="boton-bien">Sumar 1</button>
+			<p class="contador">Contador: <span id="cuenta-bien">0</span></p>
+		</div>
+	</div>
+	
+	<!-- ======== JavaScript: el comportamiento ======== -->
+	<script src="ejercicio6.js"></script>
+</body>
+</html>

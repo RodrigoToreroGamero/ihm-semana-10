@@ -1,0 +1,24 @@
+body
+ { font-family: Arial, sans-serif; background: #F5F5F5; color: #1F1F1F; margin: 0; padding: 20px; }
+.comparar { display: flex; flex-wrap: wrap; gap: 20px; }
+.tarjeta { background: white; border-radius: 10px; padding: 16px; width: 320px; }
+.mal
+ { border-top: 8px solid #B3261E; }
+.bien
+ { border-top: 8px solid #2E7D32; }
+label
+ { display: block; font-weight: bold; margin-bottom: 4px; }
+input
+ { width: 100%; box-sizing: border-box; font-size: 18px; padding: 10px; border: 1px solid #767676;
+border-radius: 6px; }
+button
+ { font-size: 18px; padding: 10px 16px; margin-top: 12px; cursor: pointer; }
+.ayuda
+ { color: #595959; margin: 0 0 6px; }
+.con-error { border: 3px solid #B3261E; }
+ /* borde rojo grueso */
+.error
+ { color: #B3261E; font-weight: bold; }
+ /* texto del error */
+.exito
+ { color: #2E7D32; font-weight: bold; }

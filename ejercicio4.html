@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejemplo 4 · Botones fáciles de tocar</title>
+	<link rel="stylesheet" href="ejercicio4.css">
+</head>
+<body>
+	<h1>Ejemplo 4: botones fáciles de tocar</h1>
+	<button id="btn-zona">Mostrar zona que se puede tocar</button>
+
+	<div class="comparar" id="zona">
+	
+		<div class="tarjeta mal">
+			<h2>Así NO</h2>
+			<p>Toca «Me gusta» sin equivocarte:</p>
+			<button aria-label="Me gusta"> </button>
+			<button aria-label="No me gusta"> </button>
+			<button aria-label="Compartir"> </button>
+			<p class="mensaje" id="mensaje-mal"></p>
+		</div>
+		
+		<div class="tarjeta bien">
+			<h2>Así SÍ</h2>
+			<p>Toca «Me gusta» sin equivocarte:</p>
+			<button aria-label="Me gusta"> </button>
+			<button aria-label="No me gusta"> </button>
+			<button aria-label="Compartir"> </button>
+			<p class="mensaje" id="mensaje-bien"></p>
+		</div>
+	</div>
+	
+	<!-- ======== JavaScript: el comportamiento ======== -->
+	<script src="ejercicio4.js"></script>
+</body>
+</html>
